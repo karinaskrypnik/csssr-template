@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/common.js"></script>
+    <title>CSSSR: Анкета (Карина Скрыпник)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+<div class="page-wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="header__stamp">
+          <img src="img/stamp.png" alt="stamp">
+        </div>
+      </header>
+
+  <main class="main-container">
+    <h1 class="main-container__intro">
+      <img src="img/main-title.png" alt="title">
+    </h1>
+
+        <table class="information">
+          <tr class="information__item">
+            <td class="information__title">Полное ФИО</td>
+            <td class="information__text">Скрыпник Карина Олеговна</td>
+          </tr>
+
+          <tr class="information__item">
+            <td class="information__title">Год рождения</td>
+            <td class="information__text">1990</td>
+          </tr>
+
+          <tr class="information__item">
+            <td class="information__title">Место жительства</td>
+            <td class="information__text">г.Санкт-Петербург</td>
+          </tr>
+
+          <tr class="information__item">
+            <td class="information__title">Скайп</td>
+            <td class="information__text">karya_skrypi</td>
+          </tr>
+
+          <tr class="information__item">
+            <td class="information__title">Почта</td>
+            <td class="information__text">karina.skrypnik@yandex.ru</td>
+          </tr>
+        </table>
+
+        <form class="form" action="/echo" method="post">
+
+          <fieldset class="form__fieldset academy">
+            <h3 class="academy__title">Выпускник <a href="www.htmlacademy.ru">htmlacademy.ru</a></h3>
+
+            <div class="academy__textbox">
+              <input class="academy__input" id="positive" type="radio" name="impression" value="Yes" checked>
+              <label class="academy__label" for="positive">Да</label>
+            </div>
+
+            <div class="academy__textbox">
+              <input class="academy__input" id="negative" type="radio" name="impression" value="No">
+              <label class="academy__label" for="negative">Нет</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset skills">
+            <h3 class="skills__title">Практические навыки</h3>
+
+          <div class="skills__wrap">
+            <div class="skills__textbox">
+              <input class="skills__input" id="bem" type="checkbox" name="bem" checked>
+              <label class="skills__label" for="bem">Методология БЭМ</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="jquery" type="checkbox" name="jquery">
+              <label class="skills__label" for="jquery">jQuery</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="grunt" type="checkbox" name="grunt" checked>
+              <label class="skills__label" for="grunt">Использую GRUNT</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="haml" type="checkbox" name="haml">
+              <label class="skills__label" for="haml">HAML</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="sass" type="checkbox" name="sass" checked>
+              <label class="skills__label" for="sass">SASS</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="less" type="checkbox" name="less">
+              <label class="skills__label" for="less">LESS</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="coffeescript" type="checkbox" name="coffeescript">
+              <label class="skills__label" for="coffeescript">CoffeeScript</label>
+            </div>
+          </div><!-- //skills__wrap-->
+
+          <div class="skills__wrap skills__wrap--second">
+            <div class="skills__textbox">
+              <input class="skills__input" id="jade" type="checkbox" name="jade" checked>
+              <label class="skills__label" for="jade">Jade</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="stylus" type="checkbox" name="stylus" checked>
+              <label class="skills__label" for="stylus">Stylus</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="angular" type="checkbox" name="angular">
+              <label class="skills__label" for="angular">Знаю (изучаю) Angular</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="android" type="checkbox" name="android">
+              <label class="skills__label" for="android">Верстка под Android</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="iOS" type="checkbox" name="iOS">
+              <label class="skills__label" for="iOS">Верстка под iOS</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="windows" type="checkbox" name="windows">
+              <label class="skills__label" for="windows">Верстка под Windows Phone</label>
+            </div>
+          </div><!-- //skills__wrap -->
+
+          <div class="skills__wrap skills__wrap--third">
+            <div class="skills__textbox">
+              <input class="skills__input" id="email" type="checkbox" name="email">
+              <label class="skills__label" for="email">Верстка рассылок</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="adaptive" type="checkbox" name="adaptive" checked>
+              <label class="skills__label" for="adaptive">Адаптивная верстка</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="dropbox" type="checkbox" name="dropbox" checked>
+              <label class="skills__label" for="dropbox">Использую Dropbox</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="gmail" type="checkbox" name="gmail" checked>
+              <label class="skills__label" for="gmail">Использую Gmail</label>
+            </div>
+
+            <div class="skills__textbox">
+              <input class="skills__input" id="github" type="checkbox" name="github" checked>
+              <label class="skills__label" for="github">Использую GitHub</label>
+            </div>
+          </div><!-- //skills__wrap -->
+        </fieldset>
+      </form>
+
+    <section class="slider">
+      <div class="slider__wrap">
+        <h2 class="slider__title">Уровень владения JavaScript</h2>
+          <ul class="slider__list">
+            <li class="slider__item">Не владею</li>
+            <li class="slider__item slider__item--active">Использую готовые решения</li>
+            <li class="slider__item">Использую готовые решения и умею их переделывать</li>
+            <li class="slider__item">Пишу сложные скрипты</li>
+          </ul>
+          <div class="slider__triangle"><img src="img/triangle.png" alt="triangle"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <table class="footer__table table">
+          <tr class="table__item">
+            <td class="table__intro">Дата заполнения</td>
+            <td class="table__date">25.10.2016</td>
+          </tr>
+    </table>
+  </footer>
+</div>
+</body>
+</html>

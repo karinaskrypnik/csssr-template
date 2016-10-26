@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/ptsans.woff"), url("../fonts/ptsans.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/ptsansbold.woff"), url("../fonts/ptsansbold.woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PTSans", arial;
+  background: url("../img/main-bg.jpg") no-repeat 50% 0;
+}
+.academy {
+  border: none;
+  color: #2f1b15;
+}
+.academy__title {
+  display: inline-block;
+  margin-left: 95px;
+  margin-right: 17px;
+  font-size: 22px;
+}
+.academy__title a {
+  color: #3c6598;
+}
+.academy__textbox {
+  display: inline-block;
+  padding-top: 22px;
+  position: relative;
+}
+.academy__input {
+  display: none;
+}
+.academy__input:checked,
+.academy__input:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.academy__input:checked + label,
+.academy__input:not(:checked) + label {
+  position: relative;
+  padding-left: 51px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+}
+.academy__input:checked + label:before,
+.academy__input:not(:checked) + label:before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 9px;
+  top: -10px;
+  background: url("../img/radiobutton-off.png") no-repeat 0 0;
+  background-size: 40px;
+}
+.academy__input:checked + label:after,
+.academy__input:not(:checked) + label:after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -10px;
+  left: 9px;
+  background: url("../img/radiobutton-on.png") no-repeat 0 0;
+  background-size: 40px;
+  transition: all 0.1s ease;
+}
+.academy__input:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.academy__input:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+.form {
+  min-height: 518px;
+}
+.header {
+  min-height: 170px;
+  position: relative;
+}
+.header__logo {
+  position: absolute;
+  top: 61px;
+  left: 46px;
+}
+.header__stamp {
+  position: absolute;
+  top: 48px;
+  right: 53px;
+}
+.footer {
+	min-height: 200px;
+	margin-top: -12px;
+  color: #2f1b15;
+}
+.footer__table {
+  width: 415px;
+  margin-top: 15px;
+  margin-left: 110px;
+}
+.table__title {
+  padding-top: 17px;
+}
+
+.table__intro {
+	padding-top: 13px;
+}
+
+.table__date {
+  font-family: "Courier New", "Arial", monospace;
+  font-size: 30px;
+  color: #231f20;
+  font-weight: 100;
+  letter-spacing: 2px;
+  background: url("../img/brown-border.png") no-repeat 0 bottom;
+}
+.information {
+  width: 783px;
+  height: 310px;
+  margin-left: 110px;
+  margin-top: -3px;
+  color: #2f1b15;
+}
+.information__item {
+  line-height: 1.5;
+}
+.information__text {
+  width: 522px;
+  margin-top: -4px;
+  margin-left: -25px;
+  display: inline-block;
+  font-family: "Courier New", "Arial", monospace;
+  font-size: 30px;
+  font-weight: 100;
+  background: url("../img/brown-border.png") no-repeat 0 bottom;
+  color: #231f20;
+}
+.main-container {
+  min-height: 980px;
+  position: relative;
+  margin-top: 188px;
+}
+.main-container__intro {
+  width: 258px;
+  position: absolute;
+  top: -170px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.skills {
+  padding: 0;
+  border: none;
+}
+.skills__title {
+  width: 80%;
+  margin-left: 109px;
+  margin-top: 5px;
+  margin-bottom: 14px;
+  color: #2f1b15;
+  font-size: 22px;
+}
+.skills__wrap {
+  width: 25%;
+  float: left;
+  margin-top: 70px;
+  margin-right: 10px;
+  margin-left: 107px;
+  line-height: 1.7;
+}
+.skills__wrap--second {
+  margin-left: 0;
+  margin-right: 0;
+}
+.skills__wrap--third {
+  margin-left: 30px;
+  margin-right: 0;
+}
+.skills__input {
+  display: none;
+}
+.skills__input:checked,
+.skills__input:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.skills__input:checked + label,
+.skills__input:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+}
+.skills__input:checked + label:before,
+.skills__input:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: url("../img/checkbox-off.png") no-repeat 0 0;
+  background-size: 20px;
+}
+.skills__input:checked + label:after,
+.skills__input:not(:checked) + label:after {
+  content: '';
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  background: url("../img/checkbox-on.png") no-repeat 0 0;
+  background-size: 25px;
+  transition: all 0.1s ease;
+}
+.skills__input:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.skills__input:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+.slider {
+  min-height: 180px;
+  position: relative;
+  color: #2f1b15;
+}
+.slider__wrap {
+  width: 757px;
+  margin: 0 auto;
+}
+.slider__list {
+  height: 50px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  background: url("../img/brown-border.png") no-repeat 0 top;
+  background-size: 100%;
+}
+.slider__title {
+  font-size: 22px;
+  margin-top: 13px;
+  margin-bottom: 37px;
+}
+.slider__item {
+  width: 167px;
+  float: left;
+  padding-top: 35px;
+  margin-right: 60px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.slider__item:after {
+  content: "";
+  position: absolute;
+  background: url("../img/vertical-line.png") no-repeat 0 0;
+  top: 71px;
+  width: 20px;
+  height: 20px;
+}
+.slider__item:nth-child(1):after {
+  top: 71px;
+  left: 199px;
+}
+.slider__item:nth-child(2):after {
+  height: 11px;
+  left: 329px;
+}
+.slider__item:nth-child(3):after {
+  height: 11px;
+  right: 423px;
+}
+.slider__item:nth-child(4):after {
+  right: 195px;
+}
+.slider__item:nth-child(1) {
+  width: 130px;
+  margin-right: 0;
+  text-align: center;
+}
+.slider__item:last-child {
+  margin-right: 0;
+  text-align: right;
+}
+.slider__triangle {
+  width: 30px;
+  height: 30px;
+  right: 0px;
+  top: 42px;
+  left: 328px;
+  position: absolute;
+}
+.page-wrapper {
+  width: 1000px;
+  min-height: 1470px;
+  margin: 0 auto;
+}
